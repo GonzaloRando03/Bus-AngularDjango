@@ -1,0 +1,98 @@
+.msg{
+    margin: 5%;
+    width: 100%;
+    position:static;
+    width: 45pc;
+    background-color: rgb(233, 233, 233);
+    border: 3px solid rgb(201, 155, 245);
+
+}
+
+.mapa{
+    width: 40pc;
+    margin: 5%;
+
+}
+
+.cabecera{
+    background-color: rgb(235, 213, 255);
+    padding: 1px;
+    box-shadow: 1px 1px 3px rgb(186, 167, 187);
+}
+
+.lineas{
+    margin-top: 5%;
+    margin-left: 12%;
+    width: 15pc;
+    display: flex;
+    margin-right: 21pc;
+}
+
+.l1{
+    margin-top: 5%;
+    background-color: rgb(80, 80, 240);
+    border: 3px solid blue;
+    width: 2pc;
+    height: 2pc;
+}
+
+.l2{
+    margin-top: 5%;
+    background-color: rgb(198, 51, 211);
+    border: 3px solid rgb(190, 23, 190);
+    width: 2pc;
+    height: 2pc;
+}
+
+.l3{
+    margin-top: 5%;
+    background-color: rgb(23, 241, 169);
+    border: 3px solid rgb(0, 168, 180);
+    width: 2pc;
+    height: 2pc;
+}
+
+.bus{
+    position:static;
+    width: 45pc;
+    background-color: rgb(233, 233, 233);
+    border: 3px solid rgb(201, 155, 245);
+    height: 20pc;
+}
+
+h4{
+    margin-left: 5%;
+}
+
+b{
+    color: rgb(0, 255, 34);
+}
+
+p{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+button{
+    border-radius: 25px;
+    background-color: red;
+    border: 0ch;
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left:2%;
+}
+
+button:active{
+    background-color: rgb(180, 23, 23);
+}
+
+.blue{
+    color: rgb(20, 107, 207);
+}
+
+.blue b{
+    color: rgb(35, 31, 223);
+}

@@ -1,0 +1,38 @@
+<div class="full">
+    <div class="col">
+        <img class="mapa" src="../../../assets/mapa.png" alt="mapa">
+        <div class="msg">
+            <div class="cabecera">
+                <h4>Mensajes</h4>
+            </div>
+            <div *ngFor="let msg of messages">
+                <p><b>BusMsg> </b>{{msg}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div>
+            <a href="/linea1" class="lineas">
+                <div class="l1"></div>
+                <h4>Selecciona L-1</h4>
+            </a>
+            <a href="/linea2" class="lineas">
+                <div class="l2"></div>
+                <h4>Selecciona L-2</h4>
+            </a>
+            <a href="/linea3" class="lineas">
+                <div class="l3"></div>
+                <h4>Selecciona L-3</h4>
+            </a>
+        </div>
+        <div class="bus">
+            <div class="cabecera">
+                <h4>Proximos autobuses</h4>
+            </div>
+            <div class="blue" *ngFor="let v of viajes.viajes, let i = index">
+                <p><b>{{v.cabecera}}></b> {{v.cuerpo}} <button (click)="delViaje(i)">x</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+

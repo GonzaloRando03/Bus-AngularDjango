@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+body{
+    background-color: rgb(232, 240, 240);
+    margin: 0%;
+    font-family:'Raleway','Arial Narrow', Arial, sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: rgb(155, 64, 240);
+    margin: 0;
+    padding: 0.1%;
+    box-shadow: 2px 2px 6px #333;
+    color: whitesmoke;
+}
+
+header h3{
+    margin-left: 3%;
+}
+
+footer{
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    background-color: rgb(22, 22, 22);
+    padding: 2%;
+    font-size: 12px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.full{
+    margin-top: 5%;
+}
+
+.col{
+    display: flex;
+    justify-content: left;
+}
+
+
+h2{
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.paradas{
+    margin-top: 7%;
+    margin-left: 10%;
+}

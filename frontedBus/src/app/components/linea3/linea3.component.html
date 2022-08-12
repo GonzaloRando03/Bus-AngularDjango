@@ -1,0 +1,105 @@
+<div class="full">
+    <div class="col flexColumn">
+        <div class="flex">
+            <div> 
+                <div class="title">
+                    <div class="l1"></div>
+                    <h2>Línea 3</h2>
+                </div>
+                <img class="mapa" src="../../../assets/mapal3.png" alt="mapa">
+            </div>
+            <div class="paradas">
+                <h2>Paradas</h2>
+                <ul class="nombres">
+                    <li (click)="getData('Cº Picasso')" ><b>P-1</b>  Cº Picasso</li>
+                    <li (click)="getData('Cº Pau Casals')"><b>P-2</b>  Cº Pau Casals</li>
+                    <li (click)="getData('Cº Cristóbal Colón')"><b>P-3</b>  Cº Cristóbal Colón</li>
+                    <li (click)="getData('Cº Hernán Cortés ')"><b>P-4</b> Cº Hernán Cortés</li>  
+                    <li (click)="getData('Cº Alexander Fleming ')"><b>P-5</b>  Cº Alexander Fleming</li>
+                    <li (click)="getData('Cº Severo Ochoa')"><b>P-6</b> Cº Severo Ochoa</li>
+                    <li (click)="getData('Cº Isaac Peral')"><b>P-7</b> Cº Isaac Peral</li>
+                    <li (click)="getData('Cº Juan Carlos I')"><b>P-8</b> Cº Juan Carlos I</li>
+                </ul>
+                <h3>{{data.name}}</h3>
+                <table>
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(7,false,1)" >{{data.normal[7]}}</td>
+                        <td (click)="reservar(7,false,2)">{{data.normal[7]}}</td>
+                        <td (click)="reservar(7,false,3)">{{data.normal[7]}}</td>
+                        <td (click)="reservar(7,false,4)">{{data.normal[7]}}</td>
+                        <td (click)="reservar(7,false,5)">{{data.normal[7]}}</td>
+                        <td (click)="reservar(7,true,6)">{{data.especial[0]}}</td>
+                        <td (click)="reservar(7,true,7)">{{data.especial[0]}}</td>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(0,false,1)">{{data.normal[0]}}</td>
+                        <td (click)="reservar(0,false,2)">{{data.normal[0]}}</td>
+                        <td (click)="reservar(0,false,3)">{{data.normal[0]}}</td>
+                        <td (click)="reservar(0,false,4)">{{data.normal[0]}}</td>
+                        <td (click)="reservar(0,false,5)">{{data.normal[0]}}</td>
+                        <td (click)="reservar(1,true,6)">{{data.especial[1]}}</td>
+                        <td (click)="reservar(1,true,7)">{{data.especial[1]}}</td>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(1,false,1)">{{data.normal[1]}}</td>
+                        <td (click)="reservar(1,false,2)">{{data.normal[1]}}</td>
+                        <td (click)="reservar(1,false,3)">{{data.normal[1]}}</td>
+                        <td (click)="reservar(1,false,4)">{{data.normal[1]}}</td>
+                        <td (click)="reservar(1,false,5)">{{data.normal[1]}}</td>
+                        <td (click)="reservar(2,true,6)">{{data.especial[2]}}</td>
+                        <td (click)="reservar(2,true,7)">{{data.especial[2]}}</td>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(2,false,1)">{{data.normal[2]}}</td>
+                        <td (click)="reservar(2,false,2)">{{data.normal[2]}}</td>
+                        <td (click)="reservar(2,false,3)">{{data.normal[2]}}</td>
+                        <td (click)="reservar(2,false,4)">{{data.normal[2]}}</td>
+                        <td (click)="reservar(2,false,5)">{{data.normal[2]}}</td>
+                        <td (click)="reservar(3,true,6)">{{data.especial[3]}}</td>
+                        <td (click)="reservar(3,true,7)">{{data.especial[3]}}</td>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(3,false,1)">{{data.normal[3]}}</td>
+                        <td (click)="reservar(3,false,2)">{{data.normal[3]}}</td>
+                        <td (click)="reservar(3,false,3)">{{data.normal[3]}}</td>
+                        <td (click)="reservar(3,false,4)">{{data.normal[3]}}</td>
+                        <td (click)="reservar(3,false,5)">{{data.normal[3]}}</td>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(4,false,1)">{{data.normal[4]}}</td>
+                        <td (click)="reservar(4,false,2)">{{data.normal[4]}}</td>
+                        <td (click)="reservar(4,false,3)">{{data.normal[4]}}</td>
+                        <td (click)="reservar(4,false,4)">{{data.normal[4]}}</td>
+                        <td (click)="reservar(4,false,5)">{{data.normal[4]}}</td>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(5,false,1)">{{data.normal[5]}}</td>
+                        <td (click)="reservar(5,false,2)">{{data.normal[5]}}</td>
+                        <td (click)="reservar(5,false,3)">{{data.normal[5]}}</td>
+                        <td (click)="reservar(5,false,4)">{{data.normal[5]}}</td>
+                        <td (click)="reservar(5,false,5)">{{data.normal[5]}}</td>
+                    </tr>
+                    <tr>
+                        <td (click)="reservar(6,false,1)">{{data.normal[6]}}</td>
+                        <td (click)="reservar(6,false,2)">{{data.normal[6]}}</td>
+                        <td (click)="reservar(6,false,3)">{{data.normal[6]}}</td>
+                        <td (click)="reservar(6,false,4)">{{data.normal[6]}}</td>
+                        <td (click)="reservar(6,false,5)">{{data.normal[6]}}</td>
+                    </tr>
+                        
+                </table>
+            </div>
+        </div>
+        <p><b> Para reservar un billete seleccione una parada y haga clic en una hora y un día en concreto.</b></p>
+    </div>
+</div>
+
