@@ -11,7 +11,11 @@ En la base de datos tenemos dos tablas para guardar datos de las lineas, paradas
 
 **En este proyecto veremos:**
 >La base de datos con su temática y estructura.
+
 >La función de consultar paradas y horarios.
+
 >La función de reservar y anular viajes.
+
 >La funcion de mensajería.
+
 >Backend programado en Python usando Django.
