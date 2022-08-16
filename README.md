@@ -19,3 +19,6 @@ En la base de datos tenemos dos tablas para guardar datos de las lineas, paradas
 >La funcion de mensajería.
 
 >Backend programado en Python usando Django.
+
+Para activar el Fronted 'ng serve'
+Para activar el Backend 'python .\manage.py runserver'
